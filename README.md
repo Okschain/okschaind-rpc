@@ -1,4 +1,4 @@
-bitcoind-rpc.js
+okschaind-rpc.js
 ===============
 
 [![NPM Package](https://img.shields.io/npm/v/bitcoind-rpc.svg?style=flat-square)](https://www.npmjs.org/package/bitcoind-rpc)
@@ -9,10 +9,10 @@ A client library to connect to Bitcoin Core RPC in JavaScript.
 
 ## Get Started
 
-bitcoind-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+okschaind-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install bitcoind-rpc
+npm install okschaind-rpc
 ```
 
 ## Examples
@@ -20,18 +20,18 @@ npm install bitcoind-rpc
 ```javascript
 var run = function() {
   var bitcore = require('bitcore');
-  var RpcClient = require('bitcoind-rpc');
+  var RpcClient = require('okschaind-rpc');
 
   var config = {
     protocol: 'http',
     user: 'user',
     pass: 'pass',
     host: '127.0.0.1',
-    port: '18332',
+    port: '8635',
   };
 
   // config can also be an url, e.g.:
-  // var config = 'http://user:pass@127.0.0.1:18332';
+  // var config = 'http://user:pass@127.0.0.1:8635';
 
   var rpc = new RpcClient(config);
 
